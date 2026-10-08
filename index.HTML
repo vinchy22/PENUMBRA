@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PENUMBRA — Proceso editorial</title>
+<style>
+@font-face{font-family:Milka;src:url("fuentes/Milka.ttf") format("truetype")}
+@font-face{font-family:Josefin;src:url("fuentes/JosefinSans-Light.ttf") format("truetype");font-weight:300}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:#f2f2f0;color:#111;font-family:Josefin,"Josefin Sans",sans-serif;font-weight:300;font-size:9px;line-height:12px}
+a{color:inherit;text-decoration:none}
+nav{position:fixed;top:0;left:0;width:100%;height:58px;display:flex;justify-content:space-between;align-items:center;padding:0 35px;background:#f2f2f0;border-bottom:1px solid #111;z-index:1000}
+.nav-logo{font-size:9px;letter-spacing:2px}.nav-links{display:flex;gap:28px}.nav-links a{position:relative;font-size:9px;letter-spacing:1px}.nav-links a:after{content:"";position:absolute;left:0;bottom:-4px;width:0;height:1px;background:#111;transition:.3s}.nav-links a:hover:after{width:100%}
+.hero{min-height:100vh;padding:58px 35px 35px;display:flex;flex-direction:column;justify-content:space-between}
+.hero-top{padding-top:25px;display:flex;justify-content:space-between;font-size:9px;letter-spacing:1px}
+.hero-title{font-family:Milka,Georgia,serif;font-size:75px;line-height:.9;font-weight:normal;letter-spacing:-2px;align-self:center;margin-top:8vh}
+.hero-bottom{display:grid;grid-template-columns:1fr 1fr 1fr;gap:30px;border-top:1px solid #111;padding-top:12px}.hero-bottom p{max-width:250px}.hero-number{text-align:right}
+section{padding:100px 35px;border-top:1px solid #111}
+.section-header{display:grid;grid-template-columns:1fr 2fr;margin-bottom:60px}.section-number{letter-spacing:1px}.section-title{letter-spacing:2px;text-transform:uppercase}
+.intro{min-height:70vh;display:grid;grid-template-columns:1fr 2fr;gap:40px}.intro-text{max-width:520px;font-size:16px;line-height:21px}
+.process-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#111;border:1px solid #111}.process-item{background:#f2f2f0;min-height:260px;padding:20px;display:flex;flex-direction:column;justify-content:space-between}.process-item h3{font-size:9px;letter-spacing:1px;font-weight:normal}.process-item p{max-width:200px}
+.video-section{overflow:hidden}.video-carousel{position:relative;width:100%}.video-window{width:100%;overflow:hidden}.video-track{display:flex;transition:transform .5s cubic-bezier(.77,0,.18,1)}.video-slide{min-width:100%;padding-right:30px}.video-slide video{display:block;width:100%;height:65vh;object-fit:cover;background:#111}.video-info{display:flex;justify-content:space-between;padding-top:12px;border-top:1px solid #111;margin-top:12px}.video-title{letter-spacing:1px}
+.carousel-controls{display:flex;justify-content:space-between;align-items:center;margin-top:30px}.carousel-button{border:1px solid #111;background:transparent;padding:12px 20px;font-family:Josefin,sans-serif;font-size:9px;cursor:pointer;transition:.25s}.carousel-button:hover{background:#111;color:#f2f2f0}
+.magazines{display:grid;grid-template-columns:repeat(3,1fr);gap:25px}.magazine{cursor:pointer}.magazine-image{width:100%;aspect-ratio:3/4;object-fit:cover;display:block;background:#ddd;transition:.4s}.magazine:hover .magazine-image{transform:scale(.98)}.magazine-info{display:flex;justify-content:space-between;padding-top:10px}
+.sources{display:grid;grid-template-columns:1fr 2fr;gap:40px}.sources-list{border-top:1px solid #111}.source{display:grid;grid-template-columns:40px 1fr;padding:15px 0;border-bottom:1px solid #111}
+footer{padding:35px;border-top:1px solid #111;display:flex;justify-content:space-between}
+@media(max-width:800px){nav{padding:0 20px}.nav-links{gap:15px}.hero{padding-left:20px;padding-right:20px}.hero-title{font-size:60px}.hero-bottom{grid-template-columns:1fr 1fr}.hero-number{display:none}section{padding:75px 20px}.intro,.section-header,.sources{grid-template-columns:1fr}.intro-text{font-size:14px;line-height:19px}.process-grid{grid-template-columns:1fr 1fr}.video-slide video{height:50vh}.magazines{grid-template-columns:1fr 1fr}}
+@media(max-width:500px){nav{height:50px}.nav-links{gap:10px}.nav-links a{font-size:8px}.hero{padding-top:50px}.hero-title{font-size:42px;letter-spacing:-1px}.hero-bottom{grid-template-columns:1fr;gap:15px}.process-grid{grid-template-columns:1fr}.video-slide{padding-right:0}.video-slide video{height:55vh}.magazines{grid-template-columns:1fr}footer{padding:25px 20px;flex-direction:column;gap:10px}}
+</style>
+</head>
+<body>
+<nav>
+<a href="#inicio" class="nav-logo">PENUMBRA</a>
+<div class="nav-links">
+<a href="#proceso">PROCESO</a><a href="#videos">VIDEOS</a><a href="#revistas">REVISTAS</a><a href="#fuentes">FUENTES</a>
+</div>
+</nav>
+
+<header class="hero" id="inicio">
+<div class="hero-top"><span>ARCHIVO / 001</span><span>PROCESO EDITORIAL</span></div>
+<h1 class="hero-title">PENUMBRA</h1>
+<div class="hero-bottom">
+<p>Un registro del proceso detrás de la creación de una serie de revistas.</p>
+<p>Ideas, ejercicios, decisiones y transformaciones reunidas en un mismo espacio.</p>
+<p class="hero-number">2026</p>
+</div>
+</header>
+
+<section class="intro">
+<div class="section-number">01 / SOBRE EL PROYECTO</div>
+<div class="intro-text">
+<p>PENUMBRA nace como un registro del proceso de construcción de diferentes revistas. Más que mostrar únicamente el resultado final, este espacio busca conservar las decisiones, experimentaciones y momentos que hicieron posible cada publicación.</p>
+<br>
+<p>El proyecto reúne el ejercicio editorial desde sus primeras ideas hasta la materialización de las revistas.</p>
+</div>
+</section>
+
+<section id="proceso">
+<div class="section-header"><div class="section-number">02 / PROCESO</div><div class="section-title">DEL EJERCICIO A LA PUBLICACIÓN</div></div>
+<div class="process-grid">
+<article class="process-item"><span>01</span><h3>INVESTIGACIÓN</h3><p>Recolección de referencias, conceptos, imágenes y fuentes para construir el punto de partida.</p></article>
+<article class="process-item"><span>02</span><h3>EXPLORACIÓN</h3><p>Desarrollo de ideas y experimentación con diferentes posibilidades visuales y editoriales.</p></article>
+<article class="process-item"><span>03</span><h3>CONSTRUCCIÓN</h3><p>Organización del contenido, imágenes, tipografías y composición de cada publicación.</p></article>
+<article class="process-item"><span>04</span><h3>CORRECCIÓN</h3><p>Cambios, ajustes y decisiones tomadas durante las diferentes etapas del ejercicio.</p></article>
+<article class="process-item"><span>05</span><h3>DIAGRAMACIÓN</h3><p>Integración de textos, imágenes y estructura para construir la revista.</p></article>
+<article class="process-item"><span>06</span><h3>RESULTADO</h3><p>La materialización final del proceso y las publicaciones terminadas.</p></article>
+</div>
+</section>
+
+<section id="videos" class="video-section">
+<div class="section-header"><div class="section-number">03 / REGISTRO</div><div class="section-title">EL EJERCICIO EN MOVIMIENTO</div></div>
+<div class="video-carousel">
+<div class="video-window"><div class="video-track" id="videoTrack">
+<div class="video-slide"><video controls preload="metadata"><source src="videos/video01.mp4" type="video/mp4"></video><div class="video-info"><span class="video-title">EJERCICIO 01</span><span>REGISTRO DEL PROCESO</span></div></div>
+<div class="video-slide"><video controls preload="metadata"><source src="videos/video02.mp4" type="video/mp4"></video><div class="video-info"><span class="video-title">EJERCICIO 02</span><span>REGISTRO DEL PROCESO</span></div></div>
+<div class="video-slide"><video controls preload="metadata"><source src="videos/video03.mp4" type="video/mp4"></video><div class="video-info"><span class="video-title">EJERCICIO 03</span><span>REGISTRO DEL PROCESO</span></div></div>
+<div class="video-slide"><video controls preload="metadata"><source src="videos/video04.mp4" type="video/mp4"></video><div class="video-info"><span class="video-title">EJERCICIO 04</span><span>REGISTRO DEL PROCESO</span></div></div>
+</div></div>
+<div class="carousel-controls">
+<button class="carousel-button" id="prevButton">← ANTERIOR</button>
+<span id="videoCounter">01 / 04</span>
+<button class="carousel-button" id="nextButton">SIGUIENTE →</button>
+</div>
+</div>
+</section>
+
+<section id="revistas">
+<div class="section-header"><div class="section-number">04 / PUBLICACIONES</div><div class="section-title">LAS REVISTAS</div></div>
+<div class="magazines">
+<article class="magazine"><img src="imagenes/revista01.jpg" alt="Revista 01" class="magazine-image"><div class="magazine-info"><span>REVISTA 01</span><span>001</span></div></article>
+<article class="magazine"><img src="imagenes/revista02.jpg" alt="Revista 02" class="magazine-image"><div class="magazine-info"><span>REVISTA 02</span><span>002</span></div></article>
+<article class="magazine"><img src="imagenes/revista03.jpg" alt="Revista 03" class="magazine-image"><div class="magazine-info"><span>REVISTA 03</span><span>003</span></div></article>
+</div>
+</section>
+
+<section id="fuentes">
+<div class="section-header"><div class="section-number">05 / FUENTES</div><div class="section-title">REFERENCIAS DEL PROYECTO</div></div>
+<div class="sources">
+<p>Material utilizado durante la investigación y desarrollo de las publicaciones.</p>
+<div class="sources-list">
+<div class="source"><span>01</span><span>Fuente pendiente de agregar.</span></div>
+<div class="source"><span>02</span><span>Fuente pendiente de agregar.</span></div>
+<div class="source"><span>03</span><span>Fuente pendiente de agregar.</span></div>
+</div>
+</div>
+</section>
+
+<footer><span>PENUMBRA</span><span>ARCHIVO DEL PROCESO EDITORIAL</span><span>2026</span></footer>
+
+<script>
+const track=document.getElementById("videoTrack");
+const slides=document.querySelectorAll(".video-slide");
+const nextButton=document.getElementById("nextButton");
+const prevButton=document.getElementById("prevButton");
+const counter=document.getElementById("videoCounter");
+let currentSlide=0;
+function updateCarousel(){
+track.style.transform=`translateX(-${currentSlide*100}%)`;
+counter.textContent=`${String(currentSlide+1).padStart(2,"0")} / ${String(slides.length).padStart(2,"0")}`;
+slides.forEach((slide,index)=>{const video=slide.querySelector("video");if(index!==currentSlide)video.pause();});
+}
+nextButton.addEventListener("click",()=>{currentSlide=(currentSlide+1)%slides.length;updateCarousel()});
+prevButton.addEventListener("click",()=>{currentSlide=(currentSlide-1+slides.length)%slides.length;updateCarousel()});
+updateCarousel();
+</script>
+</body>
+</html>
